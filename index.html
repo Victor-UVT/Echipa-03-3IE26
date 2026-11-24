@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tokyo Fitness Forge – Sala Ta 24/7 în Tokyo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { 
+      --brand-red: #ff3366; 
+      --brand-dark: #0f172a; 
+      --brand-card: #1e293b; 
+      --brand-accent: #ff5e36;
+    }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0b1120; color: #f8fafc; }
+    .bg-brand { background-color: var(--brand-red); }
+    .bg-brand-dark { background-color: var(--brand-dark); }
+    .text-brand { color: var(--brand-red) !important; }
+    .btn-brand { background: linear-gradient(135deg, var(--brand-red), var(--brand-accent)); color: #fff; border: none; }
+    .btn-brand:hover { background: linear-gradient(135deg, #e02454, #e04823); color: #fff; }
+    .btn-outline-brand { border: 2px solid var(--brand-red); color: #fff; }
+    .btn-outline-brand:hover { background: var(--brand-red); color: #fff; }
+    .card { border-radius: 1.25rem; background-color: var(--brand-card); color: #f8fafc; border: 1px solid rgba(255, 255, 255, 0.05); }
+    .hero-home {
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(11, 17, 32, 1) 100%), 
+                  url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1600&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 0 80px 0;
+    }
+    .text-muted-custom { color: #94a3b8 !important; }
+    .icon-box {
+      width: 60px;
+      height: 60px;
+      border-radius: 1rem;
+      background: rgba(255, 51, 102, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.75rem;
+      color: var(--brand-red);
+    }
+    .pricing-card.popular {
+      border: 2px solid var(--brand-red);
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+
+<!-- BANDĂ DE ANUNȚ / PROMOȚIE -->
+<div class="bg-brand text-white text-center small py-2 fw-semibold">
+  <i class="bi bi-fire me-1"></i> Prima ședință este GRATUITĂ! Înscrie-te acum la locația din Shibuya, Shinjuku sau Roppongi.
+</div>
+
+<!-- MENIU DARK (Navigație conectată cu contact.html) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-brand-dark shadow-sm border-bottom border-secondary border-opacity-25 sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4 text-white d-flex align-items-center gap-2" href="index.html">
+      <i class="bi bi-lightning-charge-fill text-brand"></i> TOKYO FORGE
+    </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#meniu" aria-label="Meniu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="meniu">
+      <ul class="navbar-nav ms-auto me-3">
+        <li class="nav-item"><a class="nav-link active fw-semibold text-brand" href="index.html">Acasă</a></li>
+        <li class="nav-item"><a class="nav-link" href="#facilitati">Facilități</a></li>
+        <li class="nav-item"><a class="nav-link" href="#clase">Clase & Orar</a></li>
+        <li class="nav-item"><a class="nav-link" href="#abonamente">Abonamente</a></li>
+        <li class="nav-item"><a class="nav-link" href="#antrenori">Antrenori</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact & Locații</a></li>
+      </ul>
+      <a href="contact.html#programare" class="btn btn-brand rounded-pill px-4 fw-bold">Vreau Pass Gratuit</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<header class="hero-home text-white">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <span class="badge bg-danger mb-3 px-3 py-2 uppercase fw-bold">Tokyo Premium Fitness Gym</span>
+        <h1 class="display-3 fw-extrabold mb-3">Transformă-ți Corpul. <br><span class="text-brand">Călește-ți Mintea.</span></h1>
+        <p class="lead text-muted-custom mb-4 fs-5">
+          Construită pentru performanță maximă în Tokyo. Săli ultra-moderne 24/7, echipamente biomecanice de elită și antrenori dedicați obiectivelor tale.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="contact.html#programare" class="btn btn-brand btn-lg rounded-pill px-4 py-3 fw-bold">
+            <i class="bi bi-ticket-perforated me-2"></i>Obține 1 Zi Gratuită
+          </a>
+          <a href="#abonamente" class="btn btn-outline-brand btn-lg rounded-pill px-4 py-3 fw-bold">
+            Vezi Abonamentele
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="card p-4 border-0 shadow-lg text-center">
+          <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=800&auto=format&fit=crop" class="img-fluid rounded-3 mb-4" alt="Tokyo Forge Interior">
+          <div class="row g-2 text-center">
+            <div class="col-4">
+              <h3 class="fw-bold text-brand mb-0">3</h3>
+              <small class="text-muted-custom">Locații Tokyo</small>
+            </div>
+            <div class="col-4">
+              <h3 class="fw-bold text-brand mb-0">24/7</h3>
+              <small class="text-muted-custom">Acces QR Pass</small>
+            </div>
+            <div class="col-4">
+              <h3 class="fw-bold text-brand mb-0">50+</h3>
+              <small class="text-muted-custom">Clase Săptămânal</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- DE CE TOKYO FORGE (FACILITĂȚI) -->
+<section id="facilitati" class="py-5">
+  <div class="container py-4">
+    <div class="text-center max-w-xl mx-auto mb-5">
+      <h6 class="text-brand fw-bold text-uppercase">De Ce Noi</h6>
+      <h2 class="display-6 fw-bold">Experiență de Antrenament Fără Compromisuri</h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 p-4 border-0 shadow-sm">
+          <div class="icon-box mb-3"><i class="bi bi-clock-history"></i></div>
+          <h4 class="fw-bold h5">Acces Non-Stop 24/7</h4>
+          <p class="text-muted-custom small mb-0">Intră oricând dorești cu aplicația mobilă sau codul tău QR personalizat în toate cele 3 cluburi din Tokyo.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 p-4 border-0 shadow-sm">
+          <div class="icon-box mb-3"><i class="bi bi-cpu"></i></div>
+          <h4 class="fw-bold h5">Echipamente Hammer Strength</h4>
+          <p class="text-muted-custom small mb-0">Aparate de ultimă generație importate, rastele de powerlifting și zonă completă de antrenament funcțional.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 p-4 border-0 shadow-sm">
+          <div class="icon-box mb-3"><i class="bi bi-water"></i></div>
+          <h4 class="fw-bold h5">Recovery & Spa Japonez</h4>
+          <p class="text-muted-custom small mb-0">Relaxare totală după antrenament: Saună finlandeză, băi reci de contrast și zonă de masaj hidraulic.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 p-4 border-0 shadow-sm">
+          <div class="icon-box mb-3"><i class="bi bi-graph-up-arrow"></i></div>
+          <h4 class="fw-bold h5">Scanare InBody Gratuită</h4>
+          <p class="text-muted-custom small mb-0">Monitorizează-ți evoluția lunară cu analize corporale medicale precise (procent grăsime, masă musculară).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLASE & PROGRAME -->
+<section id="clase" class="py-5 bg-brand-dark border-top border-bottom border-secondary border-opacity-25">
+  <div class="container py-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+      <div>
+        <h6 class="text-brand fw-bold text-uppercase">Program de Clase</h6>
+        <h2 class="display-6 fw-bold mb-0">Antrenamente de Grup Ghidate</h2>
+      </div>
+      <a href="contact.html#programare" class="btn btn-outline-brand rounded-pill px-4 mt-3 mt-md-0 fw-bold">Rezervă o Clasă</a>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card overflow-hidden h-100 border-0">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=800&auto=format&fit=crop" class="card-img-top" style="height:220px; object-fit:cover;" alt="CrossFit">
+          <div class="card-body p-4">
+            <span class="badge bg-danger mb-2">Intensitate Ridicată</span>
+            <h4 class="fw-bold">Forge HIIT & CrossFit</h4>
+            <p class="text-muted-custom small">Arde până la 800 calorii într-o ședință plină de energie, folosind greutăți libere și exerciții pliometrice.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card overflow-hidden h-100 border-0">
+          <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=800&auto=format&fit=crop" class="card-img-top" style="height:220px; object-fit:cover;" alt="MMA">
+          <div class="card-body p-4">
+            <span class="badge bg-warning text-dark mb-2">Arte Marțiale</span>
+            <h4 class="fw-bold">Tokyo Kickboxing & MMA</h4>
+            <p class="text-muted-custom small">Învață tehnică de lovire și autoapărare direct de la antrenori profesioniști din circuitul japonez de luptă.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card overflow-hidden h-100 border-0">
+          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=800&auto=format&fit=crop" class="card-img-top" style="height:220px; object-fit:cover;" alt="Yoga">
+          <div class="card-body p-4">
+            <span class="badge bg-info text-dark mb-2">Mobilitate</span>
+            <h4 class="fw-bold">Zen Yoga & Recovery</h4>
+            <p class="text-muted-custom small">Îmbunătățește flexibilitatea, eliberează tensiunea musculară și optimizează recuperarea dintre antrenamentele grele.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TARIFE / ABONAMENTE -->
+<section id="abonamente" class="py-5">
+  <div class="container py-4">
+    <div class="text-center max-w-xl mx-auto mb-5">
+      <h6 class="text-brand fw-bold text-uppercase">Prețuri Transparente</h6>
+      <h2 class="display-6 fw-bold">Alege Planul Care Ți Se Potrivește</h2>
+      <p class="text-muted-custom">Fără comisioane ascunse. Poți anula sau pune pe pauză oricând.</p>
+    </div>
+
+    <div class="row g-4 align-items-center">
+      <!-- Plan Standard -->
+      <div class="col-lg-4">
+        <div class="card p-4 p-md-5 border-0">
+          <h3 class="fw-bold h4">Standard Pass</h3>
+          <p class="text-muted-custom small">Ideal pentru antrenamente regulate.</p>
+          <div class="my-3">
+            <span class="display-5 fw-bold text-white">¥8.500</span>
+            <span class="text-muted-custom">/ lună</span>
+          </div>
+          <ul class="list-unstyled d-flex flex-column gap-3 my-4 small text-muted-custom">
+            <li><i class="bi bi-check2 text-brand me-2"></i>Acces 06:00 – 22:00 la 1 sală</li>
+            <li><i class="bi bi-check2 text-brand me-2"></i>Acces vestiare & dușuri</li>
+            <li><i class="bi bi-check2 text-brand me-2"></i>Scanare InBody inclusă</li>
+            <li class="opacity-50"><i class="bi bi-x me-2"></i>Acces la clase de grup</li>
+            <li class="opacity-50"><i class="bi bi-x me-2"></i>Zona Sauna & Spa</li>
+          </ul>
+          <a href="contact.html#programare" class="btn btn-outline-brand rounded-pill w-100 fw-bold">Alege Standard</a>
+        </div>
+      </div>
+
+      <!-- Plan PRO (Recomandat) -->
+      <div class="col-lg-4">
+        <div class="card pricing-card popular p-4 p-md-5">
+          <div class="badge bg-brand align-self-start mb-2">Cel mai popular</div>
+          <h3 class="fw-bold h4">Forge Pro 24/7</h3>
+          <p class="text-muted-custom small">Pentru pasionații de fitness dedicați.</p>
+          <div class="my-3">
+            <span class="display-5 fw-bold text-brand">¥12.000</span>
+            <span class="text-muted-custom">/ lună</span>
+          </div>
+          <ul class="list-unstyled d-flex flex-column gap-3 my-4 small">
+            <li><i class="bi bi-check2 text-brand me-2"></i>Acces Non-Stop 24/7 în toate cele 3 locații</li>
+            <li><i class="bi bi-check2 text-brand me-2"></i>Acces nelimitat la clasele de grup</li>
+            <li><i class="bi bi-check2 text-brand me-2"></i>Acces Zona Spa & Saună</li>
+            <li><i class="bi bi-check2 text-brand me-2"></i>1 Ședință Personal Training / lună</li>
+            <li><i class="bi bi-check2 text-brand me-2"></i>Invită un prieten gratuit / lună</li>
+          </ul>
+          <a href="contact.html#programare" class="btn btn-brand rounded-pill w-100 fw-bold py-2">Înscrie-te la Forge Pro</a>
+        </div>
+      </div>
+
+      <!-- Plan VIP -->
+      <div class="col-lg-4">
+        <div class="card p-4 p-md-5 border-0">
+          <h3 class="fw-bold h4">VIP Executive</h3>
+          <p class="text-muted-custom small">Experiență completă de performanță.</p>
+          <div class="my-3">
+            <span class="display-5 fw-bold text-white">¥22.000</span>
+            <span class="text-muted-custom">/ lună</span>
+          </div>
+          <ul class="list-unstyled d-flex flex-column gap-3 my-4 small text-muted-custom">
+            <li><i class="bi bi-check2 text-brand me-2"></i>Toate beneficiile Forge Pro 24/7</li>
+            <li><i class="bi bi-check2 text-brand me-2"></i>4 Ședințe Personal Training / lună</li>
+            <li><i class="bi bi-check2 text-brand me-2"></i>Plan nutrițional personalizat</li>
+            <li><i class="bi bi-check2 text-brand me-2"></i>Dulap dedicat & Prosop curat zilnic</li>
+          </ul>
+          <a href="contact.html#programare" class="btn btn-outline-brand rounded-pill w-100 fw-bold">Alege VIP Executive</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ECHIPA DE ANTRENORI -->
+<section id="antrenori" class="py-5 bg-brand-dark border-top border-secondary border-opacity-25">
+  <div class="container py-4">
+    <div class="text-center max-w-xl mx-auto mb-5">
+      <h6 class="text-brand fw-bold text-uppercase">Echipa Noastră</h6>
+      <h2 class="display-6 fw-bold">Antrenează-te Cu Cei Mai Buni</h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center p-4 border-0">
+          <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?q=80&w=400&auto=format&fit=crop" class="rounded-circle mx-auto mb-3" style="width:120px; height:120px; object-fit:cover;" alt="Antrenor">
+          <h4 class="fw-bold h5 mb-1">Kenzo Takahashi</h4>
+          <span class="text-brand small mb-2 d-block">Head PT & Powerlifting</span>
+          <p class="text-muted-custom small mb-0">Fost campion național de ghemuit cu bara, peste 10 ani experiență în forță pură.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center p-4 border-0">
+          <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=400&auto=format&fit=crop" class="rounded-circle mx-auto mb-3" style="width:120px; height:120px; object-fit:cover;" alt="Antrenoare">
+          <h4 class="fw-bold h5 mb-1">Yumi Tanaka</h4>
+          <span class="text-brand small mb-2 d-block">Specialist HIIT & Nutriție</span>
+          <p class="text-muted-custom small mb-0">Expertă în transformări corporale rapide și condiționare metabolică de înaltă intensitate.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center p-4 border-0">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop" class="rounded-circle mx-auto mb-3" style="width:120px; height:120px; object-fit:cover;" alt="Antrenor Kickboxing">
+          <h4 class="fw-bold h5 mb-1">Akira Sato</h4>
+          <span class="text-brand small mb-2 d-block">Kickboxing & Combat Fit</span>
+          <p class="text-muted-custom small mb-0">Antrenor acreditat de arte marțiale mixte, axat pe rezistență și tehnică de lovire.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center p-4 border-0">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop" class="rounded-circle mx-auto mb-3" style="width:120px; height:120px; object-fit:cover;" alt="Instructor Yoga">
+          <h4 class="fw-bold h5 mb-1">Emi Watanabe</h4>
+          <span class="text-brand small mb-2 d-block">Recovery & Posture Coach</span>
+          <p class="text-muted-custom small mb-0">Specializată în kinetoterapie, mobilitate articulară și detensionare musculară.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANNER CTA FINAL (Spre Contact) -->
+<section class="py-5">
+  <div class="container py-4">
+    <div class="card border-0 p-5 text-center position-relative overflow-hidden" style="background: linear-gradient(135deg, var(--brand-dark), #1e1b4b); border: 1px solid var(--brand-red) !important;">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="display-5 fw-bold mb-3">Ești gata să intri în comunitatea noastră din Tokyo?</h2>
+          <p class="lead text-muted-custom mb-4">Completează formularul de înregistrare și primești instant pe telefon codul QR de acces gratuit pentru prima ta ședință.</p>
+          <a href="contact.html#programare" class="btn btn-brand btn-lg rounded-pill px-5 py-3 fw-bold">
+            <i class="bi bi-qr-code-scan me-2"></i> Solicită Pass-ul Gratuit Acum
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-brand-dark border-top border-secondary border-opacity-25 py-4 text-center small text-muted-custom">
+  <div class="container">
+    <div class="mb-2">
+      <a href="index.html" class="text-white text-decoration-none fw-bold me-3">Acasă</a>
+      <a href="#facilitati" class="text-muted-custom text-decoration-none me-3">Facilități</a>
+      <a href="#clase" class="text-muted-custom text-decoration-none me-3">Clase</a>
+      <a href="#abonamente" class="text-muted-custom text-decoration-none me-3">Abonamente</a>
+      <a href="contact.html" class="text-brand text-decoration-none fw-semibold">Contact & Locații</a>
+    </div>
+    <div>&copy; 2026 Tokyo Fitness Forge (東京フィットネス) · Proiect didactic</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
